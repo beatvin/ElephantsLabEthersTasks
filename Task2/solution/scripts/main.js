@@ -26,4 +26,23 @@ async function sendEth() {
     alert(transactionResult.hash)
 }
 
+document.getElementById("checkBalanceButton").addEventListener("click", getBalance);
+
+async function getBalance() {
+
+    let privateKey = document.getElementById("privateKey").value;
+
+    let provider = new  ethers.providers.InfuraProvider("goerli",INFURA_API_KEY); 
+
+    let wallet =  new ethers.Wallet(privateKey,provider);
+
+    let balance = await provider.getBalance(wallet.address);
+
+    let balanceInEth = ethers.utils.formatEther(balance);
+
+    document.getElementById("balanceText").innerText = `Balance: ${balanceInEth} ETH`;  
+
+}
+
+
 
