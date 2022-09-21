@@ -1,6 +1,6 @@
 import {ethers} from "./ethers-5.6.esm.min.js";
 
-let INFURA_API_KEY="XXXXXXXXXXX"; // paste your infura api key here
+let INFURA_API_KEY="XXXXXXXX"; // paste your infura api key here
 
 document.getElementById("sendEtheButton").addEventListener("click", sendEth);
 

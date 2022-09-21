@@ -10,6 +10,15 @@
     <h1 id="addressText"></h1>
     <h1 id="balanceText"></h1>
 
+    <h3>ERC20 token address</h3>
+    <input type="text" id="erc20TokenAddressInput" size="90">
+    <h3>ERC20 token ABI</h3>
+    <textarea  id="erc20TokenAbiInput" cols="90" rows="10"></textarea>
+    <p></p>
+    <button id = "checkTokenBalance">Check token balance on address</button>
+    <h3 id="erc20BalanceText"></h3>
+
+
     <h3>Addresses list</h3>
     <span id="addressInputs">
         <input type="text" class = "addressInput" placeholder="ETH address here" size="90">
@@ -20,8 +29,8 @@
     <button id="removeLastAddressButton">Remove last address</button>
 
     <h3>Amount</h3>
-    <input type="text" placeholder="ETH amount here">
-    <button id="sendEthButton">Send ETH</button>
+    <input type="text" id="tokenAmountToSend" placeholder="TOKEN amount here">
+    <button id="sendEthButton">Send TOKEN</button>
 
     <script src="scripts/main.js" type="module"></script>
 </body>
