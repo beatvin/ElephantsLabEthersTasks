@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERC20 balance checker</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="center">
+        <h1>ERC20 BALANCE CHECKER</h1>
+
+        <h3>ERC20 TOKEN</h3>
+
+        <text id="tokenNameText"></text><br>
+        <text id="tokenSymbolText"></text><br>
+        <text id="tokenTotalSupplyText"></text><br><br>
+
+        <input type="text" id="tokenContractAddressInput" placeholder="ERC20 TOKEN ADDRESS" size="50" >
+        <button id="checkTokenContractAddressButton">Check address</button>
+
+        <h3>Addresses to check</h3>
+
+        <span id="addressesInputsForm"></span>
+
+        <input type="number" id="addressesQuantityInput" placeholder="Addresses quantity">
+        <button id="generateAddressesInputsFormButton">Generate form</button>
+
+        
+    </div>
+    <script src="./scripts/index.js" type="module"></script>
+</body>
+</html>
